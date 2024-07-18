@@ -11,10 +11,10 @@ fi
 cd "$(dirname "$0")"
 
 # Copy the .tmux.conf, .zshrc, and the script itself to the repository
-cp ~/.tmux.conf ~/.zshrc ./
+cp ~/.tmux.conf ~/.zshrc ~/.config/tmux-powerline/config.sh ./
 
 # Add the files to the git staging area
-git add .tmux.conf .zshrc backup_dotfiles.sh README.md
+git add .tmux.conf .zshrc config.sh backup_dotfiles.sh README.md
 
 # Commit the changes with a message
 git commit -m "Backup dotfiles on $(date)"
